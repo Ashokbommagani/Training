@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+<form action="/register" method="post">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required>
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required>
+
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            required>
+
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="60">
+
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input
+            type="date"
+            id="dob"
+            name="dob">
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Gender</legend>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male">
+
+        <label for="male">Male</label>
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female">
+
+        <label for="female">Female</label>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Skills</legend>
+
+        <input
+            type="checkbox"
+            id="html"
+            name="skills"
+            value="html">
+
+        <label for="html">HTML</label>
+
+        <input
+            type="checkbox"
+            id="css"
+            name="skills"
+            value="css">
+
+        <label for="css">CSS</label>
+
+        <input
+            type="checkbox"
+            id="javascript"
+            name="skills"
+            value="javascript">
+
+        <label for="javascript">JavaScript</label>
+
+    </fieldset>
+
+    <br>
+
+    <label for="country">Country:</label>
+    <datalist id="Countries">
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </datalist>
+    <input type="text" id="country" name="country" list="Countries">
+
+    <br><br>
+
+    <label for="message">Message:</label>
+
+    <br>
+
+    <textarea
+        id="message"
+        name="message"
+        rows="5"
+        cols="40"
+        placeholder="Enter your message">
+    </textarea>
+
+    <br><br>
+
+    <input
+        type="hidden"
+        name="form_type"value="registration">
+
+    <button type="submit">Register</button>
+
+    <button type="reset">Reset</button>
+
+    <button type="button" onclick="alert('Button clicked!')">
+        Normal Button
+    </button>
+</form>
+</body>
+</html>

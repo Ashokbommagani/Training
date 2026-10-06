@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms Selection Controls</title>
+    </head>
+    <body>
+        <p>Gender:</p>
+        <label>
+            <input type="radio" name="gender" value="male" checked />
+            Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female" />
+            Female
+        </label>
+        <p>Skills:</p>
+        <label for ="html">HTML</label>
+            <input type="checkbox" id="html" name="skills" value="html" multiple />
+        <label for="css">CSS</label>
+            <input type="checkbox" id="css" name="skills" value="css" />
+        <label for ="javascript">JavaScript</label>
+            <input type="checkbox" id="javascript" name="skills" value="javascript" />
+        <label for="terms">I agree to the terms and conditions</label>
+            <input type="checkbox" id="terms" name="terms" value="yes" checked />
+        <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option>
+                <option value="India"></option>
+            </select>
+    </body>
+</html>
