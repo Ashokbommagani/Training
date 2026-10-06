@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Background Properties Demo</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-color: #f4f4f4;
+    }
+
+    /* Background Color */
+    .color-box {
+        background-color: lightblue;
+        padding: 30px;
+        margin: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    /* Background Image */
+    .image-box {
+        height: 250px;
+        margin: 20px;
+        background-image: url("https://picsum.photos/800/300");
+        border-radius: 10px;
+    }
+        /* Background Repeat */
+    .repeat-box {
+        height: 200px;
+        margin: 20px;
+        background-image: url("https://picsum.photos/100");
+        background-repeat: repeat;
+        border: 2px solid #333;
+    }
+
+    /* Background Position */
+    .position-box {
+        height: 250px;
+        margin: 20px;
+        background-image: url("https://picsum.photos/300");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        border: 2px solid #333;
+    }
+
+    /* Background Size */
+    .cover-box {
+        height: 300px;
+        margin: 20px;
+        background-image: url("https://picsum.photos/1200/600");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .contain-box {
+        height: 300px;
+        margin: 20px;
+        background-image: url("https://picsum.photos/800/400");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 2px solid #333;
+    }
+
+    /* Fixed Background */
+    .fixed-bg {
+        height: 400px;
+        background-image: url("https://picsum.photos/1600/900");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    /* Background Shorthand */
+    .shorthand-box {
+        height: 300px;
+        margin: 20px;
+        background:
+            #222
+            url("https://picsum.photos/1000/500")
+            no-repeat
+            center / cover;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border-radius: 10px;
+    }
+
+    /* Hero Section with Overlay */
+    .hero {
+        height: 500px;
+        background:
+            linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),
+            url("https://picsum.photos/1600/800");
+        background-size: cover;
+        background-position: center;
+
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .content {
+        padding: 50px;
+        line-height: 1.8;
+    }
+</style>
+</head>
+<body>
+
+    <!-- Background Color -->
+    <div class="color-box">
+        <h2>Background Color Example</h2>
+    </div>
+
+    <!-- Background Image -->
+    <div class="image-box"></div>
+
+    <!-- Background Repeat -->
+    <div class="repeat-box"></div>
+
+    <!-- Background Position -->
+    <div class="position-box"></div>
+
+    <!-- Background Size Cover -->
+    <div class="cover-box">
+        COVER
+    </</div>
+
+    <!-- Background Size Contain -->
+    <div class="contain-box"></div>
+
+    <!-- Fixed Background -->
+    <div class="fixed-bg">
+        Fixed Background
+    </div>
+
+    <!-- Background Shorthand -->
+    <div class="shorthand-box">
+        Background Shorthand
+    </div>
+
+    <!-- Hero Section with Overlay -->
+    <section class="hero">
+        <h1>Welcome to My Website</h1>
+        <p>Learn CSS Backgrounds Step by Step</p>
+    </section>
+
+    <div class="content">
+        <h2>CSS Background Properties</h2>
+        <p>
+            This page demonstrates background-color,
+            background-image, background-repeat,
+            background-position, background-size,
+            background-attachment, and background shorthand.
+        </p>
+
+        <p>
+            Scroll up and down to observe the fixed background effect.
+        </p>
+    </div>
+
+</body>
+</html>
