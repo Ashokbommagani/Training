@@ -1,0 +1,14 @@
+@import "buttons.css";
+@import url("style.css");
+body
+{
+    background:yellowgreen;
+    }
+h1
+{
+    color: blue;
+}
+p
+{
+    color:yellow;
+}
