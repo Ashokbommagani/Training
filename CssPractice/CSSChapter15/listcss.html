@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #2563eb;
+        }
+
+        /* Unordered List */
+        .courses {
+            list-style-type: square;
+            color: #333;
+        }
+
+        /* Ordered List */
+        .steps {
+            list-style-type: upper-roman;
+            color: #008000;
+        }
+
+        /* Features List */
+        .features {
+            list-style: circle inside;
+            background: #f5f5f5;
+            padding: 10px;
+            width: 300px;
+        }
+
+        /* Navigation Menu */
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Available Courses</h2>
+    <ul class="courses">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+
+    <h2>Registration Steps</h2>
+    <ol class="steps">
+        <li>Open the website</li>
+        <li>Create an account</li>
+        <li>Fill the registration form</li>
+        <li>Submit details</li>
+    </ol>
+
+    <h2>Website Features</h2>
+    <ul class="features">
+        <li>Responsive Design</li>
+        <li>Easy Navigation</li>
+        <li>Fast Loading</li>
+    </ul>
+
+    <h2>Navigation Menu</h2>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+</body>
+</html>
