@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Links Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* Normal Link */
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        /* Visited Link */
+        a:visited {
+            color: purple;
+        }
+
+        /* Hover Effect */
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        /* Active Link */
+        a:active {
+            color: green;
+            background-color: lightyellow;
+        }
+
+        /* Navigation Menu */
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #e0e0e0;
+        }
+
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Link States Demo</h1>
+
+    <nav>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+        <a href="https://www.mozilla.org" target="_blank">Mozilla</a>
+        <a href="https://www.microsoft.com" target="_blank">Microsoft</a>
+    </nav>
+
+    <div class="info">
+        <h2>Instructions</h2>
+        <ul>
+            <li>Normal links appear <strong>blue</strong>.</li>
+            <li>Visited links appear <strong>purple</strong>.</li>
+            <li>Hover over a link to make it <strong>red and underlined</strong>.</li>
+            <li>Click and hold a link to see the <strong>green active state</strong>.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
