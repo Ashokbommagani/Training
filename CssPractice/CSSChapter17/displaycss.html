@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Display Property Example</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    /* Block Example */
+    .block-box {
+        display: block;
+        background-color: lightblue;
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Inline Example */
+    .inline-box {
+        display: inline;
+        background-color: lightgreen;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    /* Inline-Block Example */
+    .inline-block-box {
+        display: inline-block;
+        background-color: orange;
+        width: 120px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        margin: 5px;
+    }
+
+    /* Hidden Element */
+    .hidden-box {
+        display: none;
+        background-color: yellow;
+        padding: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+    <h2>1. display: block</h2>
+    <div class="block-box">Block Element 1</div>
+    <div class="block-box">Block Element 2</div>
+
+    <h2>2. display: inline</h2>
+    <span class="inline-box">Inline 1</span>
+    <span class="inline-box">Inline 2</span>
+    <span class="inline-box">Inline 3</span>
+
+    <h2>3. display: inline-block</h2>
+    <div class="inline-block-box">Box 1</div>
+    <div class="inline-block-box">Box 2</div>
+    <div class="inline-block-box">Box 3</div>
+
+    <h2>4. display: none</h2>
+    <div>Visible Box</div>
+    <div class="hidden-box">Hidden Box</div>
+    <div>Another Visible Box</div>
+
+</body>
+</html>
