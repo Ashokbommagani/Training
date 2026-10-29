@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Width and Height Example</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100%;
+            max-width: 1000px;
+            min-height: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 2px solid #333;
+        }
+
+        .card{
+            width: 100%;
+            max-width: 600px;
+            min-width: 300px;
+            min-height: 200px;
+            max-height: 350px;
+            overflow: auto;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid steelblue;
+            border-radius: 10px;
+        }
+
+        h2{
+            text-align: center;
+            color: navy;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>CSS Width and Height</h2>
+
+            <p>
+                This card demonstrates width, height, max-width,
+                min-width, max-height and min-height properties.
+            </p>
+
+            <p>
+                Resize the browser window and observe how the card
+                adjusts its size while respecting the minimum and
+                maximum dimensions.
+            </p>
+
+            <p>
+                The content can grow, and when it exceeds the maximum
+                height, a scrollbar appears because overflow is set
+                to auto.
+            </p>
+
+            <p>
+                Width: 100%<br>
+                Max Width: 600px<br>
+                Min Width: 300px<br>
+                Min Height: 200px<br>
+                Max Height: 350px
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
