@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS GRIDS</title>
+		<style>
+			.P {
+                display:grid;
+                grid-template-columns: 1fr 3fr;
+                grid-template-rows: 100px 50px 300PX 100px;
+				border:solid 2px black;
+                padding:10px;
+                background-color:blueviolet;
+                gap:10px;
+				grid-template-areas: 
+				    "one one"
+					"two two"
+					"four three"
+					"five five";
+            }
+            .c{
+                border: solid 2px green;
+                padding:15px;
+            }
+			
+			header{
+			   grid-area: one;
+			   background-color: blue;
+			}
+			
+			nav{
+			  grid-area: two;
+			  background-color: pink;			   
+			}
+			
+			
+			main{
+			   grid-area: three;
+			   background-color: orange;
+			}
+			
+			aside{
+			   grid-area: four;
+			   background-color: yellow;
+			}
+			
+			footer{
+			  grid-area: five;
+			  background-color: purple;			
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="P">
+			<header class="c"> this header </header>
+			<nav class="c"> this is navigation </nav>
+			<main class="c"> this is main content </main>
+			<aside class="c"> this is side bar </aside>
+			<footer class="c"> this is footer </footer>
+        </div>
+	</body>
+</html
