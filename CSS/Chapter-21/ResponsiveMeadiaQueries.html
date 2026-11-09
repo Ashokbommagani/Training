@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS AUTOFIT RESPONSIVE Meadia Quaries</title>
+    
+        <style>
+            .container {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 15px;
+            }
+            /* Tablet */
+                     @media (max-width: 768px) {
+            .container {
+                     grid-template-columns: repeat(2, 1fr);
+           }
+           }
+            /* Mobile */
+                 @media (max-width: 480px) {
+                .container {
+                             grid-template-columns: 1fr;
+                }
+                }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="c c1">BOX1</div>
+            <div class="c c2">BOX2</div>
+            <div class="c c3">BOX3</div>
+            <div class="c c4">BOX4</div>
+            <div class="c c5">BOX5</div>
+            <div class="c c6">BOX6</div>
+            <div class="c c7">BOX7</div>
+            <div class="c c8">BOX8</div>
+            <div class="c c9">BOX9</div>
+        </div>
+    </body>
+</html>   
