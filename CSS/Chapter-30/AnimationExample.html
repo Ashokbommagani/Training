@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation Example</title>
+        <style>
+            @keyframes moveBox {
+                from {
+                    transform: translateX(0);
+                }
+
+                 to {
+                    transform: translateX(200px);
+                }
+            }
+            box {
+                animation-name: moveBox;
+                animation-duration: 3s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 2s;
+                animation-iteration-count: calc(2);
+            }
+         
+        </style>
+    </head>
+    <body>
+        <img src="star.jpg" alt="star image" />
+        <div class="box">welcome to css</div>
+    </body>
+</html>
