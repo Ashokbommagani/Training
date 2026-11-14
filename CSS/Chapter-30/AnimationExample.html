@@ -12,15 +12,18 @@
                     transform: translateX(200px);
                 }
             }
-            .box {
+            .box,img{
                 border:solid 2px green;
                 padding:10px;
                 animation-name: moveBox;
                 animation-duration: 3s;
                 animation-timing-function: ease-in-out;
                 animation-delay: 2s;
-                animation-iteration-count: infinite;
+                animation-iteration-count: 2;
                 animation-play-state: running;
+            }
+            .box,img:hover {
+                animation-play-state: paused;
             }
          
         </style>
