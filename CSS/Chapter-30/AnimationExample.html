@@ -14,22 +14,25 @@
             }
             .box,img{
                 border:solid 2px green;
+                width: 100px;
+                height: 100px;
                 padding:10px;
                 animation-name: moveBox;
                 animation-duration: 3s;
                 animation-timing-function: ease-in-out;
                 animation-delay: 2s;
-                animation-iteration-count: 2;
+                animation-iteration-count:infinite;
                 animation-play-state: running;
             }
-            .box,img:hover {
+            .box:hover {
                 animation-play-state: paused;
             }
-         
+            
+
         </style>
     </head>
     <body>
-        <img src="star.jpg" alt="star image" />
+        <img src="../star.jpg" class="img"alt="star image" />
         <div class="box">welcome to css</div>
     </body>
 </html>
