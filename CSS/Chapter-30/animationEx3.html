@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AnimationEx2</title>
+        <style>
+            @keyframes animation2{
+                0%{
+                    
+                    transform:translateX(0px);
+                    background-image:url("monkey.jpg");
+                    background-size:contain;
+                }
+                30%{
+                    transform:translateX(500px);
+                    background-image:url("tiger.jpg");
+                    background-size:contain;
+                }
+                50%{
+                   transform:translate(500px, 300px);
+                    background-image:url("udutha.jpg");
+                    background-size:contain;
+                }
+                70%{
+                   transform:translate(0px, 300px);
+                    background-image:url("fox.jpg");
+                    background-size:contain;
+                }
+                100%{
+                   transform:translateY(0px);
+                   background-image:url("star.jpg");
+                   background-size:contain;
+                }
+                110%{
+                    transform:translate(0px,300px,400px);
+                    background-image:url("monkey.jpg");
+                    background-size:contain;
+                }
+            }
+            .box{
+                animation-name:animation2;
+                animation-duration:5s;
+                animation-delay:1s;
+                animation-iteration-count:30;
+                animation-timing-function:ease-in;
+                animation-play-state:running ;
+                border:solid 2px green;
+                padding:10px;
+                width:200px;
+                height:100px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+         
+        </div>
+    </body>
+</html>
