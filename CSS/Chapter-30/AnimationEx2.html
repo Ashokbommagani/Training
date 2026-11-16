@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AnimationEx2</title>
+        <style>
+            @keyframes animation2{
+                from{
+                    
+                    transform:rotate(45deg);
+                    transform:translateX(0px);
+                    background-color: blueviolet;
+                }
+                to{
+                    transform:translateX(500px);
+                    transform:rotate(180deg);
+                    background-color: chartreuse;
+                }
+            }
+            .box{
+                animation-name:animation2;
+                animation-duration:5s;
+                animation-delay:1s;
+                animation-iteration-count:3;
+                animation-timing-function:ease;
+                animation-direction:alternate-reverse;
+                animation-play-state:running ;
+                border:solid 2px green;
+                padding:10px;
+                width:200px;
+                height:100px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">BOX</div>
+    </body>
+</html>
