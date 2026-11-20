@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>linear gradial</title>
+        <style>
+            @keyframes box{
+                from{
+                    transform: translateX(0px);
+                }
+                to{
+                    transform: translateX(100px);
+
+                }
+            }
+            .container{
+                border:solid 2px green;
+                padding:10px;
+                height:300px;
+                width:300px;
+            }
+            .box{
+                border:solid 2px blue;
+                padding:10px;
+                height:150px;
+                width:150px;
+                background:linear-gradient(red, blue, green);
+                animation-name:box;
+                animation-duration:5s;
+                animation-timing-function:ease;
+                animation-play-state: running;
+                animation-direction: normal;
+                animation-iteration-count: infinite;
+                animation-delay: 0s;
+            }
+            .box:hover{
+                animation-play-state: paused;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+
+    </body>
+</html>
