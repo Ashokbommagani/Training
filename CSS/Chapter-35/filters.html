@@ -1,0 +1,61 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>filters in css</title>
+        <style>
+            .container .box{
+                border:solid 2px black;
+            }
+            img{
+                height:100px;
+                width:200px;
+            }
+            .container{
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+            .box1 img{
+                filter: blur(100px);
+            }
+            .box2 img{
+                filter:brightness(100%)
+            }
+            .box3 img{
+                filter:grayscale(50%)
+            }
+            .box4 img{
+                filter: drop-shadow(20px 20px 2px blue);
+            }
+            .box5 img{
+                filter: sepia(50%);
+            }
+            .box6 img{
+                filter:opacity:(50%);
+            }
+            .box7 img{
+                filter:contrast(50%)
+            }
+        
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box box1">
+                <img src="elephant.jpg" alt="elephant image"/>
+            <div class="box box2">
+                <img src="elephant.jpg" alt="elephant image"/>
+            <div class="box box3">
+                <img src="elephant.jpg" alt="elephant image"/>
+            <div class="box box4">
+                <img src="elephant.jpg" alt="elephant image"/>
+            <div class="box box5">
+                <img src="elephant.jpg" alt="elephant image"/>
+            <div class="box box6">
+                <img src="elephant.jpg" alt="elephant image"/>
+            <div class="box box7">
+                <img src="elephant.jpg" alt="elephant image"/>
+            </div>
+        </div>
+    </body>
+</html>
