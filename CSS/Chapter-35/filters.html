@@ -3,19 +3,26 @@
     <head>
         <title>filters in css</title>
         <style>
-            .container .box{
+            .container, .box{
                 border:solid 2px black;
+                padding: 20px;;
+            }
+            .box{
+                width: 100px;
+                height: 100px;
             }
             img{
                 height:100px;
-                width:200px;
+                width:100px;
             }
             .container{
                 display:grid;
                 grid-template-columns: repeat(3,1fr);
+                width: 450px;
+                gap: 10px;
             }
             .box1 img{
-                filter: blur(100px);
+                filter: blur(1px);
             }
             .box2 img{
                 filter:brightness(100%)
@@ -42,19 +49,25 @@
     <body>
         <div class="container">
             <div class="box box1">
-                <img src="elephant.jpg" alt="elephant image"/>
+                <img src="../elephant.jpg" alt="elephant image"/>
+            </div>
             <div class="box box2">
-                <img src="elephant.jpg" alt="elephant image"/>
+                <img src="../elephant.jpg" alt="elephant image"/>
+                </div>
             <div class="box box3">
-                <img src="elephant.jpg" alt="elephant image"/>
+                <img src="../elephant.jpg" alt="elephant image"/>
+            </div>
             <div class="box box4">
-                <img src="elephant.jpg" alt="elephant image"/>
+                <img src="../elephant.jpg" alt="elephant image"/>
+            </div>
             <div class="box box5">
-                <img src="elephant.jpg" alt="elephant image"/>
+                <img src="../elephant.jpg" alt="elephant image"/>
+            </div>
             <div class="box box6">
-                <img src="elephant.jpg" alt="elephant image"/>
+                <img src="../elephant.jpg" alt="elephant image"/>
+            </div>
             <div class="box box7">
-                <img src="elephant.jpg" alt="elephant image"/>
+                <img src="../elephant.jpg" alt="elephant image"/>
             </div>
         </div>
     </body>
