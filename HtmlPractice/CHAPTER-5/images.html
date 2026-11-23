@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Chapter 5 - HTML Images</title>
+
+    <style>
+
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkgreen;
+            border-bottom: 2px solid lightgray;
+            padding-bottom: 8px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+
+        /* Responsive Images */
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Image Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Image Map */
+        .map-container {
+            overflow-x: auto;
+        }
+
+        .map-image {
+            width: 700px;
+            height: 360px;
+            max-width: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: darkblue;
+            color: white;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML IMAGES - CHAPTER 5</h1>
+
+    <p style="text-align:center;">
+        Welcome to Hari Code Solutions
+    </p>
+
+
+    <!-- 1. BASIC IMAGE TAG -->
+
+    <section>
+
+        <h2>1. Basic Image Tag</h2>
+
+        <p>Displaying an image using img tag.</p>
+
+        <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
+            alt="Developer working on a laptop"
+            width="400"
+            height="250"
+        >
+
+    </section>
+
+
+    <!-- 2. SRC ATTRIBUTE -->
+
+    <section>
+
+        <h2>2. SRC Attribute</h2>
+
+        <p>src specifies the image location.</p>
+
+        <!-- Relative Path -->
+        <h3>Relative Path</h3>
+
+        <img
+            src="images/logo.png"
+            alt="Company Logo"
+            width="150"
+            onerror="this.style.display='none'"
+        >
+
+        <p>Example: images/logo.png</p>
+
+        <!-- Parent Directory -->
+        <h3>Parent Directory Path</h3>
+
+        <p>Example: ../logo.png</p>
+
+        <!-- Absolute URL -->
+        <h3>Absolute URL</h3>
+
+        <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+            alt="Online learning and computer training"
+            width="400"
+        >
+
+    </section>
+
+
+    <!-- 3. ALT ATTRIBUTE -->
+
+    <section>
+
+        <h2>3. ALT Attribute</h2>
+
+        <h3>Meaningful Alternative Text</h3>
+
+        <img
+            src="student.jpg"
+            alt="Student attending an HTML programming class"
+            width="250"
+        >
+
+        <h3>Decorative Image</h3>
+
+        <img
+            src="decorative-line.png"
+            alt=""
+            width="200"
+        >
+
+        <p>
+            alt provides alternative text when an image
+            cannot load and helps screen readers.
+        </p>
+
+    </section>
+
+
+    <!-- 4. WIDTH ATTRIBUTE -->
+
+    <section>
+
+        <h2>4. Width Attribute</h2>
+
+        <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
+            alt="Programming workspace"
+            width="300"
+        >
+
+    </section>
+
+
+    <!-- 5. HEIGHT ATTRIBUTE -->
+
+    <section>
+
+        <h2>5. Height Attribute</h2>
+
+        <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
+            alt="Programming workspace"
+            height="150"
+        >
+
+    </section>
+
+
+    <!-- 6. WIDTH AND HEIGHT TOGETHER -->
+
+    <section>
+
+        <h2>6. Width and Height Together</h2>
+
+        <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600"
+            alt="Developer working on computer"
+            width="300"
+            height="200"
+        >
+
+    </section>
+
+
+    <!-- 7. IMAGE OPTIMIZATION -->
+
+    <section>
+
+        <h2>7. Image Optimization</h2>
+
+        <p>
+            Image optimization means reducing image file
+            size while maintaining acceptable quality.
+        </p>
+
+        <ul>
+            <li>Compress images.</li>
+            <li>Reduce unnecessary image dimensions.</li>
+            <li>Choose the correct image format.</li>
+            <li>Use responsive images.</li>
+            <li>Use lazy loading where appropriate.</li>
+        </ul>
+
+        <p>
+            Example: An optimized 300 KB image generally
+            loads faster than an unnecessary 5 MB image.
+        </p>
+
+    </section>
+
+
+    <!-- 8. IMAGE FORMATS -->
+
+    <section>
+
+        <h2>8. Image Formats</h2>
+
+        <h3>JPEG / JPG</h3>
+        <p>Suitable for photographs.</p>
+        <p>Example: student.jpg</p>
+
+        <h3>PNG</h3>
+        <p>Suitable for transparent images and logos.</p>
+        <p>Example: logo.png</p>
+
+        <h3>SVG</h3>
+        <p>Suitable for logos, icons and vector graphics.</p>
+        <p>Example: logo.svg</p>
+
+        <h3>WebP</h3>
+        <p>Modern format with efficient compression.</p>
+        <p>Example: course.webp</p>
+
+        <h3>AVIF</h3>
+        <p>Modern format designed for efficient compression.</p>
+        <p>Example: photo.avif</p>
+
+        <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+            alt="Computer learning image"
+            width="300"
+        >
+
+    </section>
+
+
+    <!-- 9. RESPONSIVE IMAGES -->
+
+    <section>
+
+        <h2>9. Responsive Images</h2>
+
+        <p>
+            Responsive images adjust to available screen width.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+            alt="Responsive programming image"
+            class="responsive-image"
+            width="800"
+            height="500"
+        >
+
+    </section>
+
+
+    <!-- 10. LAZY LOADING -->
+
+    <section>
+
+        <h2>10. Lazy Loading</h2>
+
+        <p>
+            loading="lazy" allows the browser to delay
+            loading an image until it is needed.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600"
+            alt="Student learning programming"
+            width="400"
+            loading="lazy"
+        >
+
+    </section>
+
+
+    <!-- 11. WIDTH AND HEIGHT FOR PERFORMANCE -->
+
+    <section>
+
+        <h2>11. Width and Height for Performance</h2>
+
+        <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+            alt="Computer programming"
+            width="1200"
+            height="800"
+            class="responsive-image"
+        >
+
+        <p>
+            Specifying dimensions helps the browser
+            reserve space and reduce layout shifts.
+        </p>
+
+    </section>
+
+
+    <!-- 12. IMAGE OPTIMIZATION BEST PRACTICES -->
+
+    <section>
+
+        <h2>12. Image Optimization Best Practices</h2>
+
+        <ol>
+            <li>Compress images.</li>
+            <li>Use appropriate formats.</li>
+            <li>Resize images before uploading.</li>
+            <li>Use responsive images.</li>
+            <li>Use lazy loading for below-the-fold images.</li>
+        </ol>
+
+    </section>
+
+
+    <!-- 13. SRCSET AND SIZES -->
+
+    <section>
+
+        <h2>13. SRCSET and SIZES</h2>
+
+        <p>
+            The browser selects an appropriate image
+            depending on screen size and resolution.
+        </p>
+
+        <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800"
+            srcset="
+                https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=480 480w,
+                https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800 800w,
+                https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200 1200w
+            "
+            sizes="
+                (max-width: 600px) 480px,
+                (max-width: 1000px) 800px,
+                1200px
+            "
+            alt="Responsive programming workspace"
+            class="responsive-image"
+            width="1200"
+            height="800"
+        >
+
+    </section>
+
+
+    <!-- 14. IMAGE GALLERY -->
+
+    <section>
+
+        <h2>14. Image Gallery</h2>
+
+        <div class="gallery">
+
+            <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400"
+                alt="Programming desk"
+                loading="lazy"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400"
+                alt="Online learning"
+                loading="lazy"
+            >
+
+            <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400"
+                alt="Technology team"
+                loading="lazy"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- 15. IMAGE MAP -->
+
+    <section>
+
+        <h2>15. Image Map</h2>
+
+        <p>
+            An image map allows different areas of one image
+            to have different clickable links.
+        </p>
+
+        <div class="map-container">
+
+            <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='360' viewBox='0 0 700 360'%3E%3Crect width='700' height='360' fill='%23eaf3fa'/%3E%3Crect x='30' y='30' width='190' height='130' rx='12' fill='%2394c9f5' stroke='%231e4770' stroke-width='3'/%3E%3Ctext x='125' y='100' text-anchor='middle' font-size='24' fill='%231e4770'%3ENORTH%3C/text%3E%3Ccircle cx='350' cy='105' r='70' fill='%239be0a5' stroke='%231e7030' stroke-width='3'/%3E%3Ctext x='350' y='113' text-anchor='middle' font-size='22' fill='%231e7030'%3ECENTRE%3C/text%3E%3Cpolygon points='460,220 580,180 650,290 500,320' fill='%23f5c47d' stroke='%23804c00' stroke-width='3'/%3E%3Ctext x='555' y='260' text-anchor='middle' font-size='22' fill='%23804c00'%3ESOUTH%3C/text%3E%3C/svg%3E"
+                alt="Illustrated map showing North, Centre and South regions"
+                usemap="#my-map"
+                width="700"
+                height="360"
+                class="map-image"
+            >
+
+            <map name="my-map">
+
+                <!-- Rectangle -->
+                <area
+                    shape="rect"
+                    coords="30,30,220,160"
+                    href="#north"
+                    alt="North Region"
+                    title="North Region"
+                >
+
+                <!-- Circle -->
+                <area
+                    shape="circle"
+                    coords="350,105,70"
+                    href="#centre"
+                    alt="Central Region"
+                    title="Central Region"
+                >
+
+                <!-- Polygon -->
+                <area
+                    shape="poly"
+                    coords="460,220,580,180,650,290,500,320"
+                    href="#south"
+                    alt="South Region"
+                    title="South Region"
+                >
+
+            </map>
+
+        </div>
+
+        <p>Click different regions in the image above.</p>
+
+        <h3 id="north">North Region</h3>
+        <p>You clicked the North Region.</p>
+
+        <h3 id="centre">Central Region</h3>
+        <p>You clicked the Central Region.</p>
+
+        <h3 id="south">South Region</h3>
+        <p>You clicked the South Region.</p>
+
+    </section>
+
+
+    <!-- 16. NORMAL IMAGE LINK -->
+
+    <section>
+
+        <h2>16. Normal Image Link</h2>
+
+        <p>The entire image is clickable.</p>
+
+        <a href="https://www.google.com"
+           target="_blank">
+
+            <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+                alt="Click to visit Google"
+                width="300"
+            >
+
+        </a>
+
+    </section>
+
+
+    <!-- 17. IMAGE MAP VS NORMAL IMAGE LINK -->
+
+    <section>
+
+        <h2>17. Difference</h2>
+
+        <h3>Normal Image Link</h3>
+        <p>Entire image has one clickable link.</p>
+
+        <h3>Image Map</h3>
+        <p>Different image regions have different links.</p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>Hari Code Solutions</h3>
+
+        <p>HTML Chapter 5 Completed</p>
+
+        <p>Learn | Practice | Develop</p>
+
+    </footer>
+
+</body>
+
+</html>
