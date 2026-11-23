@@ -1,0 +1,971 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 - HTML Lists</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+            margin: 20px;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #173b67;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #dce8f5;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #173b67;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #173b67;
+        }
+
+        h3 {
+            color: #287a9e;
+        }
+
+        .square-list {
+            list-style-type: square;
+        }
+
+        footer {
+            background-color: #173b67;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Web Development Course</h1>
+        <p>Chapter 6 - Complete HTML Lists Example</p>
+    </header>
+
+    <!-- NAVIGATION LIST -->
+    <nav>
+        <h2>Website Navigation</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ordered">Ordered Lists</a></li>
+            <li><a href="#unordered">Unordered Lists</a></li>
+            <li><a href="#description">Description Lists</a></li>
+            <li><a href="#nested">Nested Lists</a></li>
+            <li><a href="#definitions">Definitions</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+        <h2>Welcome to HTML Course</h2>
+
+        <p>
+            HTML is used to create the structure
+            of web pages.
+        </p>
+
+        <p>
+            In this course, we learn HTML, CSS
+            and JavaScript.
+        </p>
+    </section>
+
+    <!-- ORDERED LIST -->
+    <section id="ordered">
+
+        <h2>1. Ordered List (ol)</h2>
+
+        <h3>Default Number List</h3>
+
+        <ol>
+            <li>Learn HTML Basics</li>
+            <li>Learn HTML Elements</li>
+            <li>Learn HTML Attributes</li>
+            <li>Practice HTML</li>
+        </ol>
+
+        <h3>Type 1 - Numbers</h3>
+
+        <ol type="1">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Type A - Uppercase Letters</h3>
+
+        <ol type="A">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Type a - Lowercase Letters</h3>
+
+        <ol type="a">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Type I - Uppercase Roman Numbers</h3>
+
+        <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Type i - Lowercase Roman Numbers</h3>
+
+        <ol type="i">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Start Attribute</h3>
+
+        <ol start="5">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Type and Start Together</h3>
+
+        <ol type="A" start="3">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Reversed Attribute</h3>
+
+        <ol reversed>
+            <li>Step Three</li>
+            <li>Step Two</li>
+            <li>Step One</li>
+        </ol>
+
+        <h3>Start and Reversed Together</h3>
+
+        <ol start="5" reversed>
+            <li>Five</li>
+            <li>Four</li>
+            <li>Three</li>
+        </ol>
+
+        <h3>All Attributes Together</h3>
+
+        <ol type="A" start="5" reversed>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+    </section>
+
+    <!-- UNORDERED LIST -->
+    <section id="unordered">
+
+        <h2>2. Unordered List (ul)</h2>
+
+        <h3>Programming Languages</h3>
+
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+        </ul>
+
+        <h3>HTML Features</h3>
+
+        <ul>
+            <li>Easy to Learn</li>
+            <li>Platform Independent</li>
+            <li>Supported by Browsers</li>
+            <li>Works with CSS and JavaScript</li>
+        </ul>
+
+        <h3>CSS List Style Type - Square</h3>
+
+        <ul class="square-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+        </ul>
+
+    </section>
+
+    <!-- DESCRIPTION LIST -->
+    <section id="description">
+
+        <h2>3. Description List (dl)</h2>
+
+        <h3>Web Technologies</h3>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language.</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Used to add interactivity to web pages.</dd>
+        </dl>
+
+        <h3>Multiple Descriptions for One Term</h3>
+
+        <dl>
+            <dt>HTML</dt>
+
+            <dd>HyperText Markup Language.</dd>
+
+            <dd>A markup language used to structure
+                web content.</dd>
+        </dl>
+
+        <h3>Multiple Terms with One Description</h3>
+
+        <dl>
+            <dt>HTML</dt>
+            <dt>HyperText Markup Language</dt>
+
+            <dd>A markup language used to structure
+                web pages.</dd>
+        </dl>
+
+        <h3>Product Information</h3>
+
+        <dl>
+            <dt>Product</dt>
+            <dd>Laptop</dd>
+
+            <dt>Price</dt>
+            <dd>₹50,000</dd>
+
+            <dt>Processor</dt>
+            <dd>Intel Core i5</dd>
+        </dl>
+
+        <h3>Frequently Asked Questions</h3>
+
+        <dl>
+            <dt>What is HTML?</dt>
+            <dd>HTML is used to structure web content.</dd>
+
+            <dt>What is CSS?</dt>
+            <dd>CSS is used to style web content.</dd>
+        </dl>
+
+    </section>
+
+    <!-- NESTED LISTS -->
+    <section id="nested">
+
+        <h2>4. Nested Unordered List</h2>
+
+        <ul>
+            <li>Frontend
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+
+            <li>Backend
+                <ul>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>5. Nested Ordered List</h2>
+
+        <ol>
+            <li>HTML
+                <ol>
+                    <li>Elements</li>
+                    <li>Attributes</li>
+                    <li>Forms</li>
+                </ol>
+            </li>
+
+            <li>CSS
+                <ol>
+                    <li>Selectors</li>
+                    <li>Properties</li>
+                    <li>Layouts</li>
+                </ol>
+            </li>
+        </ol>
+
+        <h2>6. Mixed Nested Lists</h2>
+
+        <ol>
+            <li>Frontend Development
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+
+            <li>Backend Development
+                <ul>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>7. Three-Level Nested List</h2>
+
+        <ul>
+            <li>Web Development
+
+                <ul>
+                    <li>Frontend
+
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                    </li>
+
+                    <li>Backend
+
+                        <ul>
+                            <li>PHP</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- COURSE STRUCTURE -->
+    <section>
+
+        <h2>8. Complete Course Structure</h2>
+
+        <ol>
+
+            <li>HTML
+
+                <ul>
+                    <li>Basic Elements</li>
+                    <li>Attributes</li>
+                    <li>Links</li>
+                    <li>Images</li>
+                    <li>Lists</li>
+                    <li>Forms</li>
+                </ul>
+
+            </li>
+
+            <li>CSS
+
+                <ul>
+                    <li>Selectors</li>
+                    <li>Colors</li>
+                    <li>Box Model</li>
+                    <li>Flexbox</li>
+                    <li>Grid</li>
+                </ul>
+
+            </li>
+
+            <li>JavaScript
+
+                <ul>
+                    <li>Variables</li>
+                    <li>Functions</li>
+                    <li>Objects</li>
+                    <li>DOM</li>
+                    <li>Events</li>
+                </ul>
+
+            </li>
+
+        </ol>
+
+    </section>
+
+    <!-- DEFINITIONS -->
+    <section id="definitions">
+
+        <h2>9. HTML Important Definitions</h2>
+
+        <dl>
+            <dt>Ordered List (ol)</dt>
+            <dd>Displays items in a meaningful sequence.</dd>
+
+            <dt>Unordered List (ul)</dt>
+            <dd>Displays items using bullet points.</dd>
+
+            <dt>List Item (li)</dt>
+            <dd>Defines an individual list item.</dd>
+
+            <dt>Description List (dl)</dt>
+            <dd>Represents a collection of terms and descriptions.</dd>
+
+            <dt>Description Term (dt)</dt>
+            <dd>Defines the name or term.</dd>
+
+            <dt>Description Details (dd)</dt>
+            <dd>Provides the description of a term.</dd>
+
+            <dt>Nested List</dt>
+            <dd>A list placed inside another list item.</dd>
+        </dl>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>Congratulations!</h2>
+
+        <p>You have completed Chapter 6 - HTML Lists.</p>
+
+        <p>Practice Daily | Learn HTML | Become a Developer</p>
+
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 - HTML Lists</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+            margin: 20px;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #173b67;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #dce8f5;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #173b67;
+            font-weight: bold;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #173b67;
+        }
+
+        h3 {
+            color: #287a9e;
+        }
+
+        .square-list {
+            list-style-type: square;
+        }
+
+        footer {
+            background-color: #173b67;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Web Development Course</h1>
+        <p>Chapter 6 - Complete HTML Lists Example</p>
+    </header>
+
+    <!-- NAVIGATION LIST -->
+    <nav>
+        <h2>Website Navigation</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#ordered">Ordered Lists</a></li>
+            <li><a href="#unordered">Unordered Lists</a></li>
+            <li><a href="#description">Description Lists</a></li>
+            <li><a href="#nested">Nested Lists</a></li>
+            <li><a href="#definitions">Definitions</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+        <h2>Welcome to HTML Course</h2>
+
+        <p>
+            HTML is used to create the structure
+            of web pages.
+        </p>
+
+        <p>
+            In this course, we learn HTML, CSS
+            and JavaScript.
+        </p>
+    </section>
+
+    <!-- ORDERED LIST -->
+    <section id="ordered">
+
+        <h2>1. Ordered List (ol)</h2>
+
+        <h3>Default Number List</h3>
+
+        <ol>
+            <li>Learn HTML Basics</li>
+            <li>Learn HTML Elements</li>
+            <li>Learn HTML Attributes</li>
+            <li>Practice HTML</li>
+        </ol>
+
+        <h3>Type 1 - Numbers</h3>
+
+        <ol type="1">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Type A - Uppercase Letters</h3>
+
+        <ol type="A">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Type a - Lowercase Letters</h3>
+
+        <ol type="a">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Type I - Uppercase Roman Numbers</h3>
+
+        <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Type i - Lowercase Roman Numbers</h3>
+
+        <ol type="i">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Start Attribute</h3>
+
+        <ol start="5">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Type and Start Together</h3>
+
+        <ol type="A" start="3">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+        <h3>Reversed Attribute</h3>
+
+        <ol reversed>
+            <li>Step Three</li>
+            <li>Step Two</li>
+            <li>Step One</li>
+        </ol>
+
+        <h3>Start and Reversed Together</h3>
+
+        <ol start="5" reversed>
+            <li>Five</li>
+            <li>Four</li>
+            <li>Three</li>
+        </ol>
+
+        <h3>All Attributes Together</h3>
+
+        <ol type="A" start="5" reversed>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+
+    </section>
+
+    <!-- UNORDERED LIST -->
+    <section id="unordered">
+
+        <h2>2. Unordered List (ul)</h2>
+
+        <h3>Programming Languages</h3>
+
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+        </ul>
+
+        <h3>HTML Features</h3>
+
+        <ul>
+            <li>Easy to Learn</li>
+            <li>Platform Independent</li>
+            <li>Supported by Browsers</li>
+            <li>Works with CSS and JavaScript</li>
+        </ul>
+
+        <h3>CSS List Style Type - Square</h3>
+
+        <ul class="square-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+        </ul>
+
+    </section>
+
+    <!-- DESCRIPTION LIST -->
+    <section id="description">
+
+        <h2>3. Description List (dl)</h2>
+
+        <h3>Web Technologies</h3>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language.</dd>
+
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Used to add interactivity to web pages.</dd>
+        </dl>
+
+        <h3>Multiple Descriptions for One Term</h3>
+
+        <dl>
+            <dt>HTML</dt>
+
+            <dd>HyperText Markup Language.</dd>
+
+            <dd>A markup language used to structure
+                web content.</dd>
+        </dl>
+
+        <h3>Multiple Terms with One Description</h3>
+
+        <dl>
+            <dt>HTML</dt>
+            <dt>HyperText Markup Language</dt>
+
+            <dd>A markup language used to structure
+                web pages.</dd>
+        </dl>
+
+        <h3>Product Information</h3>
+
+        <dl>
+            <dt>Product</dt>
+            <dd>Laptop</dd>
+
+            <dt>Price</dt>
+            <dd>₹50,000</dd>
+
+            <dt>Processor</dt>
+            <dd>Intel Core i5</dd>
+        </dl>
+
+        <h3>Frequently Asked Questions</h3>
+
+        <dl>
+            <dt>What is HTML?</dt>
+            <dd>HTML is used to structure web content.</dd>
+
+            <dt>What is CSS?</dt>
+            <dd>CSS is used to style web content.</dd>
+        </dl>
+
+    </section>
+
+    <!-- NESTED LISTS -->
+    <section id="nested">
+
+        <h2>4. Nested Unordered List</h2>
+
+        <ul>
+            <li>Frontend
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+
+            <li>Backend
+                <ul>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>5. Nested Ordered List</h2>
+
+        <ol>
+            <li>HTML
+                <ol>
+                    <li>Elements</li>
+                    <li>Attributes</li>
+                    <li>Forms</li>
+                </ol>
+            </li>
+
+            <li>CSS
+                <ol>
+                    <li>Selectors</li>
+                    <li>Properties</li>
+                    <li>Layouts</li>
+                </ol>
+            </li>
+        </ol>
+
+        <h2>6. Mixed Nested Lists</h2>
+
+        <ol>
+            <li>Frontend Development
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+
+            <li>Backend Development
+                <ul>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>7. Three-Level Nested List</h2>
+
+        <ul>
+            <li>Web Development
+
+                <ul>
+                    <li>Frontend
+
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                    </li>
+
+                    <li>Backend
+
+                        <ul>
+                            <li>PHP</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+
+    </section>
+
+    <!-- COURSE STRUCTURE -->
+    <section>
+
+        <h2>8. Complete Course Structure</h2>
+
+        <ol>
+
+            <li>HTML
+
+                <ul>
+                    <li>Basic Elements</li>
+                    <li>Attributes</li>
+                    <li>Links</li>
+                    <li>Images</li>
+                    <li>Lists</li>
+                    <li>Forms</li>
+                </ul>
+
+            </li>
+
+            <li>CSS
+
+                <ul>
+                    <li>Selectors</li>
+                    <li>Colors</li>
+                    <li>Box Model</li>
+                    <li>Flexbox</li>
+                    <li>Grid</li>
+                </ul>
+
+            </li>
+
+            <li>JavaScript
+
+                <ul>
+                    <li>Variables</li>
+                    <li>Functions</li>
+                    <li>Objects</li>
+                    <li>DOM</li>
+                    <li>Events</li>
+                </ul>
+
+            </li>
+
+        </ol>
+
+    </section>
+
+    <!-- DEFINITIONS -->
+    <section id="definitions">
+
+        <h2>9. HTML Important Definitions</h2>
+
+        <dl>
+            <dt>Ordered List (ol)</dt>
+            <dd>Displays items in a meaningful sequence.</dd>
+
+            <dt>Unordered List (ul)</dt>
+            <dd>Displays items using bullet points.</dd>
+
+            <dt>List Item (li)</dt>
+            <dd>Defines an individual list item.</dd>
+
+            <dt>Description List (dl)</dt>
+            <dd>Represents a collection of terms and descriptions.</dd>
+
+            <dt>Description Term (dt)</dt>
+            <dd>Defines the name or term.</dd>
+
+            <dt>Description Details (dd)</dt>
+            <dd>Provides the description of a term.</dd>
+
+            <dt>Nested List</dt>
+            <dd>A list placed inside another list item.</dd>
+        </dl>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>Congratulations!</h2>
+
+        <p>You have completed Chapter 6 - HTML Lists.</p>
+
+        <p>Practice Daily | Learn HTML | Become a Developer</p>
+
+    </footer>
+
+</body>
+</html>
