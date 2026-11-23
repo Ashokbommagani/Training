@@ -1,98 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <!-- Character encoding -->
     <meta charset="UTF-8">
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
 
-    <title>HTML Links</title>
+    <!-- Makes webpage responsive on mobiles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chapter 4 - Links and Navigation</title>
+
+    <!-- Internal CSS Styling -->
+    <style>
+
+        /* General page styling */
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            padding:0;
+            line-height:1.6;
+        }
+
+        /* Header section */
+        header{
+            background:#0077cc;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        /* Navigation bar */
+        nav{
+            background:#333;
+            text-align:center;
+            padding:15px;
+        }
+
+        /* Navigation links */
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        /* Mouse hover effect */
+        nav a:hover{
+            color:yellow;
+        }
+
+        /* Section styling */
+        section{
+            padding:30px;
+            border-bottom:1px solid lightgray;
+        }
+
+        /* Content box styling */
+        .box{
+            background:#f4f4f4;
+            padding:15px;
+            border-radius:5px;
+            margin-top:10px;
+        }
+
+        /* Footer styling */
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+    </style>
+
 </head>
-
 <body>
 
-    <h1 id="top">
-        Hari Code Solutions
-    </h1>
+    <!-- =====================================================
+         TOP OF PAGE
+         id="top" is used for Back to Top links
+    ====================================================== -->
+    <header id="top">
+        <h1>HTML Chapter 4 - Links and Navigation</h1>
+        <p>Complete Demonstration of HTML Links</p>
+    </header>
 
-    <!-- Navigation -->
+    <!-- =====================================================
+         NAVIGATION MENU
+         Internal links connect to sections using #id
+    ====================================================== -->
     <nav>
-
-        <a href="#about">
-            About
-        </a>
-
-        <a href="#courses">
-            Courses
-        </a>
-
-        <a href="#contact">
-            Contact
-        </a>
-
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <hr>
+    <!-- =====================================================
+         HOME SECTION
+         Demonstrates basic hyperlinks using anchor tag
+    ====================================================== -->
+    <section id="home">
 
-    <!-- External Link -->
-    <h2>External Website</h2>
+        <h2>1. Anchor Tag Examples</h2>
 
-    <a
-        href="https://www.example.com"
-        target="_blank"
-        rel="noopener"
-    >
-        Visit Example
-    </a>
+        <div class="box">
 
-    <!-- About -->
-    <h2 id="about">
-        About Us
-    </h2>
+            <!-- Basic hyperlink -->
+            <p>
+                Visit Google:
+                <a href="https://www.google.com">
+                    Google
+                </a>
+            </p>
 
-    <p>
-        We provide software training and development services.
-    </p>
+            <!-- Another hyperlink -->
+            <p>
+                Visit Example:
+                <a href="https://www.example.com">
+                    Example Website
+                </a>
+            </p>
 
-    <!-- Courses -->
-    <h2 id="courses">
-        Our Courses
-    </h2>
+        </div>
 
-    <p>
-        We provide HTML, CSS, JavaScript and React training.
-    </p>
+    </section>
 
-    <!-- Email -->
-    <h2>Email</h2>
+    <!-- =====================================================
+         ABOUT SECTION
+         Demonstrates Absolute and Relative URLs
+    ====================================================== -->
+    <section id="about">
 
-    <a href="mailto:info@example.com">
-        Send Email
-    </a>
+        <h2>2. Absolute URL Example</h2>
 
-    <!-- Telephone -->
-    <h2>Phone</h2>
+        <div class="box">
 
-    <a href="tel:+919066731080">
-        Call Us
-    </a>
+            <!-- Complete web address -->
+            <p>
+                <a href="https://developer.mozilla.org/">
+                    Learn HTML at MDN
+                </a>
+            </p>
 
-    <!-- Contact -->
-    <h2 id="contact">
-        Contact Us
-    </h2>
+        </div>
 
-    <p>
-        Hyderabad, Telangana, India
-    </p>
+        <h2>3. Relative URL Examples</h2>
 
-    <!-- Back to Top -->
-    <a href="#top">
-        Back to Top
-    </a>
+        <div class="box">
 
-</body>
+            <!-- File in same folder -->
+            <p>
+                Same Directory:
+                <a href="about.html">
+                    about.html
+                </a>
+            </p>
 
-</html>
+            <!-- File in child folder -->
+            <p>
+                Child Directory:
+                <a href="pages/services.html">
+                    pages/services.html
+                </a>
+            </p>
+
+            <!-- File in parent folder -->
+            <p>
+                Parent Directory:
+                <a href="../index.html">
+                    ../index.html
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         COURSES SECTION
+         Demonstrates Internal Links and Target Attributes
+    ====================================================== -->
+    <section id="courses">
+
+        <h2>4. Internal Page Links</h2>
+
+        <div class="box">
+
+            <!-- Jump to Contact section -->
+            <p>
+                <a href="#contact">
+                    Go to Contact Section
+                </a>
+            </p>
+
+            <!-- Jump to top of page -->
+            <p>
+                <a href="#top">
+                    Back to Top
+                </a>
+            </p>
+
+        </div>
+
+        <h2>5. Open Link in New Tab</h2>
+
+        <div class="box">
+
+            <!-- target="_blank"
+                 Opens website in new tab
+
+                 rel="noopener noreferrer"
+                 Security best practice
+            -->
+            <p>
+                <a href="https://www.microsoft.com"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    Open Microsoft Website
+
+                </a>
+            </p>
+
+        </div>
+
+        <h2>6. Target Attribute Examples</h2>
+
+        <div class="box">
+
+            <!-- Opens in same page (default) -->
+            <p>
+                <a href="about.html" target="_self">
+                    target="_self"
+                </a>
+            </p>
+
+            <!-- Opens in new tab -->
+            <p>
+                <a href="https://www.google.com"
+                   target="_blank"
+                   rel="noopener">
+
+                    target="_blank"
