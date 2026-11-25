@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> selectors in css</title>
+		<style>
+			*{
+                background-color:green;
+            }
+            h1{
+                color:red;
+            }
+            p{
+                color: blueviolet;
+            }
+            #paragraph{
+                background-color:pink;
+                border:dashed 2px yellow;
+                padding:10px;
+            
+            }
+            .box{
+                height:100px;
+                width:100px;
+                border:solid 2px red;
+                padding:10px;
+                background-color:brown;
+            }
+            #btn{
+                color:black;
+                background-color:gold
+            }
+            h1,#paragraph,.box,#btn{
+                font-size:20px;
+            }
+		</style>
+	</head>
+	<body>
+        <h1>1."universal selector" selects every html elements and apply styles to them</h1>
+        <p id="paragraph">2. eleemet selector is selects specified elements</p>
+        <div class="box">
+            3.class selector
+        </div>
+        <button id="btn">
+            submit id
+        </button>
+	</body>
+</html>
