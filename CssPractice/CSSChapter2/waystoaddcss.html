@@ -8,7 +8,7 @@
             --primary-background-color: red;
         }
 			.btn{
-				color:(--primary-color);
+				color: var(--primary-background-color);
 			}
 			#internal{
 				color:rgb(255,0,0);
@@ -18,9 +18,10 @@
 				</style>
 	<body>
 		<p style="color:green;font-size:20px">1.inline css is best for single element</p>
-		<h3 id="internal" !important>2internal css is best for single webpage</h3>
+		<h3 id="internal">2internal css is best for single webpage</h3>
         <h4>3.External css is best for large projects we need to use link in head section to link html to css files</h4>
         <h5>4.import is used for modular development it is mainly used for combine css files in one </h5>
 		<button class="btn">ok</button>
+		</h2>
 	</body>
 </html>

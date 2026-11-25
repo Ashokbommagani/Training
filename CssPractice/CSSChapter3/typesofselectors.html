@@ -39,6 +39,12 @@
                 color:blue;
                 font-style:italic;
             }
+            h2 ~ mark{
+                color:red;
+            }
+            mark + mark{
+                color:pink;
+            }
 		</style>
 	</head>
 	<body>
@@ -58,5 +64,12 @@
             <p class="child">7.childselector
             </p>
         </div>
+        <h2>
+			<mark>mark1</mark>
+			<mark>mark2</mark>
+        </h2>
+        <mark> this is sibling mark 1 </mark>
+        <mark> this is sibling mark 2 </mark>
+        <mark> this is sibling mark 3</mark>
 	</body>
 </html>
