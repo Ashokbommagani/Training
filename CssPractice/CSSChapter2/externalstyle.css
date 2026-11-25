@@ -1,0 +1,7 @@
+@import url("main.css");
+/* or @import "main.css" */ 
+h4{
+    border:solid 2px yellow;
+    padding:10px;
+    background-color:purple;
+}
