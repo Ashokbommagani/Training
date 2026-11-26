@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>BOX MODEL IN CSS</title>
+        <title>css links</title>
         <style>
-            div, .box{
-                border:solid 2px #111;
-                padding:20px;
-                height:200px;
-                width:200px;
-                margin:30px;
-            }
             div{
-                box-sizing:content-box;
+                border:solid 2px black;
+                padding:10px;
+                margin:10px;
+                width:100px;
+                height:100px;
             }
-            .box{
-                box-sizing:border-box;
+            a:link{
+                color:orangered;
+            }
+            a:hover{
+                color: blue;
+            }
+            a:active{
+                color: greenyellow;
+            }
+            a:visited{
+                color: aqua;
             }
         </style>
     </head>
     <body>
-        <div>welcome</div>
-        <div class="box">external box</div>
+        <div>
+            1.link
+            <a href="https://www.google.com">Visit Google</a>
+            <a href="https://www.wikipedia.org">Visit Wikipedia</a>  
+        </div>
+        <div>
+            2.hover
+             <a href="https://www.youtube.com">Visit youtube</a> 
+        </div>
+        <div>
+            3.active
+             <a href="https://www.facebbok.com">Visit facebook</a>
+
+        </div>
+        <div>
+            4.visited
+            <a href="https://www.w3schools.com">Visit w3 schools</a>
+            <a href="https://www.tutorialpoint.com">Visit tutorialpoint</a>
+            <a href="https://www.javatpoint.com">Visit javatpoint</a>
+
+        </div>
+
     </body>
 </html>
