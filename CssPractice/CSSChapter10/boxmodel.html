@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BOX MODEL IN CSS</title>
+        <style>
+            div, .box{
+                border:solid 2px #111;
+                padding:20px;
+                height:200px;
+                width:200px;
+                margin:30px;
+            }
+            div{
+                box-sizing:content-box;
+            }
+            .box{
+                box-sizing:border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div>welcome</div>
+        <div class="box">external box</div>
+    </body>
+</html>
