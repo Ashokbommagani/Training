@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>text in css</title>
         <style>
-            p{
-                color:#cccc;
-                text-align:justify;
-                text-decoration:none;
-                text-transform:uppercase;
-                text-indent:300px;
-                letter-spacing:5px;
-                word-spacing:10px;
-                line-height:10px;
-                text-shadow:2px 2px 0px red;
-                background-color:yellow;
-                border:solid 5px green;
-                padding:10px;
-                height:30%;
-                width:30%;
-                white-space:nowrap;
-                overflow:hidden;
-                text-overflow:ellipsis;
-            }
+           .box{
+                border: solid 2px black;
+                padding: 20px;
+                width: 100px;
+                height: 100px;
+           }
+
+           .box1{
+            color: blue;
+            text-decoration: underline;
+            text-transform: capitalize;
+            text-align: center;
+            letter-spacing: 2px;
+           }
+
+           .box2{
+            color: red;
+            text-decoration: overline;
+            text-transform: lowercase;
+           }
+           .box3{
+            color: #FF00FF;
+            text-decoration: line-through;
+            text-transform: uppercase;
+           }
+           .box4{
+            color: rgb(255, 0, 200);
+            text-decoration: underline;
+            text-transform: lowercase;
+           }
+           .box5{
+            color: yellow;
+            text-decoration: overline;
+            text-transform: uppercase;
+           }
+           .box6{
+            color: pink;
+            text-decoration: overline;
+            text-transform: lowercase;
+           }
         </style>
     </head>
     <body>
-        <p>text color pink</p>
-        <p> welcome background yellow</p>
+        <a class="box box1" href=""> this is box one </a>
+        <a class="box box2" href=""> this is box one </a>
+        <a class="box box3" href=""> this is box one </a>
+        <a class="box box4" href=""> this is box one </a>
+        <a class="box box5" href=""> this is box one </a>
+        <a class="box box6" href=""> this is box one </a>
     </body>
 </html>
