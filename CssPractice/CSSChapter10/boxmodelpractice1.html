@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>box model in css</title>
+        <style>
+            .box{
+                border:dashed 2px purple;
+                padding:20px;
+                width:100px;
+                margin:10px;
+            }
+            .box1{
+                box-sizing: content-box;
+            }
+            .box2{
+                box-sizing: border-box;
+            }
+            .box3{
+                height:200px;
+                width:200px;
+            }
+            .box4{
+                padding:30px;
+            }
+            .box5{
+                margin-top:50px;
+            }
+            .box6{
+                border:solid 3px orangered;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box box1">content box</div>
+        <div class="box box2">border box</div>
+        <div class="box box3">content</div>
+        <div class="box box4">padding</div>
+        <div class="box box5">margin</div>
+        <div class="box box6">border</div>
+    </body>
+</html>
