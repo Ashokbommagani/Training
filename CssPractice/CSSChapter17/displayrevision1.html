@@ -3,62 +3,40 @@
 	<head>
 		<title>display revision</title>
 		<style>
+			.container{
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 10px;
+			}
 			.box{
 				border:solid 2px yellow;
 				padding:10px;
 				margin:20px;
-				height:200px;
-				width:200px;
 			}
-			.container{
-				display:flex;
-				flex-direction:column;
-				gap:10px;
-            }
-			    .box1{
-				    background-color:red;
-				    padding:15px;
-			   }
-			.container{
-				display:flex;
-				flex-direction:row;/* default value*/
+
+			.box1{
+				display: flex;
 			}
+
 			.box2{
-				background-color:pink;
-				padding:10px;
+				display: flex;
+				flex-direction: column;
 			}
-			.container{
-			display:grid;
-			grid-template-columns:repear(2,1fr);
-			}
+
 			.box3{
-				background-color:yellow;
-				padding:10px;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
 			}
-            .container{
-				display:inline-flex;
-				gap:10px;
-			}
+
 			.box4{
-				background-color:purple;
-				padding:15px;
+				display: inline-grid;
+				grid-template-columns: repeat(3, 1fr);
 			}
-            .container{
-				display:inline-grid;
-                grid-template-columns:repaet(2,80px);
-                gap:10px;
-                background-color: aqua;
-                padding:10px;
-			
-			}
+
 			.box5{
-				background-color:brown;
-				padding:15px;
+				display: inline-flex;
 			}
-			.box6{
-				background-color:#FAB;
-				padding:15px;
-			}
+
 		</style>
 	</head>
 	<body>
@@ -77,7 +55,7 @@
 				<p>This is paragraph4</p>
 				<p>This is paragraph5</p>
 			</div>
-		<	div class="box box3">
+		    <div class="box box3">
 				<p>This is paragraph1</p>
 				<p>This is paragraph2</p>
 				<p>This is paragraph3</p>
