@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>display revision</title>
+		<style>
+			.box{
+				border:solid 2px yellow;
+				padding:10px;
+				margin:20px;
+				height:200px;
+				width:200px;
+			}
+			.container{
+				display:flex;
+				flex-direction:column;
+				gap:10px;
+			}
+			.box1{
+				background-color:red;
+				padding:15px;
+			}
+			.container{
+				display:flex;
+				flex-direction:row;/* default value*/
+			}
+			.box2{
+				background-color:pink;
+				padding:10px;
+			}
+			.container{
+			display:grid;
+			grid-template-columns:repear(2,1fr);
+			}
+			.box3{
+				background-color:yellow;
+				padding:10px;
+			}
+			.box4{
+				background-color:purple;
+				padding:15px;
+			}
+			.box5{
+				background-color:brown;
+				padding:15px;
+			}
+			.box6{
+				background-color:#FAB;
+				padding:15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box box1">
+				<p>This is paragraph1</p>
+				<p>This is paragraph2</p>
+				<p>This is paragraph3</p>
+				<p>This is paragraph4</p>
+				<p>This is paragraph5</p>
+			</div>
+			<div class="box box2">
+				<p>This is paragraph1</p>
+				<p>This is paragraph2</p>
+				<p>This is paragraph3</p>
+				<p>This is paragraph4</p>
+				<p>This is paragraph5</p>
+			</div>
+		<	div class="box box3">
+				<p>This is paragraph1</p>
+				<p>This is paragraph2</p>
+				<p>This is paragraph3</p>
+				<p>This is paragraph4</p>
+				<p>This is paragraph5</p>
+			</div>
+			<div class="box box4">
+				<p>This is paragraph1</p>
+				<p>This is paragraph2</p>
+				<p>This is paragraph3</p>
+				<p>This is paragraph4</p>
+				<p>This is paragraph5</p>
+			</div>
+			<div class="box box5">
+				<p>This is paragraph1</p>
+				<p>This is paragraph2</p>
+				<p>This is paragraph3</p>
+				<p>This is paragraph4</p>
+				<p>This is paragraph5</p>
+			</div>
+			<div class="box box6">
+				<p>This is paragraph1</p>
+				<p>This is paragraph2</p>
+				<p>This is paragraph3</p>
+				<p>This is paragraph4</p>
+				<p>This is paragraph5</p>
+			</div>
+	</div>
+	</body>
+</html>

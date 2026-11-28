@@ -1,22 +1,93 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 	<head>
     	<title>css display revision<title>
         <style>
         	.box{
-				border:solid 3px blue;
+				border:solid 2px blue;
                 padding:10px;
-                width:100px;
-                height:100px;
+				margin:20px;
+                width:200px;
+                height:200px;
             }
+			.box1 p{
+					display:block;
+					width:100px;
+					height:100px;
+			}
+			.box2 p{
+					display:inline;
+			}
+			.box3 p{
+					display:inline-block;
+					width:100px;
+					height:100px;
+					
+			}
+			.box4 p{
+					display:none;
+			}
+			.box5 .gpp{
+					display:flex;
+					gap:10px;
+			}
+				.p3{
+				 display:contents;
+			}
+			.child{
+				backgrounD-color:green;
         </style>
     </head>
     <body>
-    	<div class="box box1">block box1</div>
-        <div class="box box2">inline box2</div>
-        <div class="box box3">inline block box3</div>
-        <div class="box box4">none box4</div>
-        <div class="box box5">contents</div>
+    	<div class="box box1">block box1
+			<p>This is paragraph1</p>
+			<p>This is paragraph2</p>
+			<p>This is paragraph3</p>
+			<p>This is paragraph4</p>
+			<p>This is paragraph5</p>
+		</div>
+        <div class="box box2">inline box2
+			<p>This is paragraph1</p>
+			<p>This is paragraph2</p>
+			<p>This is paragraph3</p>
+			<p>This is paragraph4</p>
+			<p>This is paragraph5</p>
+		</div>
+        <div class="box box3">inline block box3
+			<p>This is paragraph1</p>
+			<p>This is paragraph2</p>
+			<p>This is paragraph3</p>
+			<p>This is paragraph4</p>
+			<p>This is paragraph5</p>
+		</div>
+        <div class="box box4">none box4
+			<p>This is paragraph1</p>
+			<p>This is paragraph2</p>
+			<p>This is paragraph3</p>
+			<p>This is paragraph4</p>
+			<p>This is paragraph5</p>
+		</div>
+        <div class="box box5">contents box5
+			<div class="gpp">
+				<div class="p1">
+					<p class="child">This is paragraph1</p>
+					<p class="child">This is paragraph2 </p>
+					<p class="child">This is paragraph3</p>
+					<p class="child">This is paragraph4</p>
+					<p class="child">This is paragraph5</p>
+				</div>
+				<div class="p2>
+					<p class="child">This is paragraph6</p>
+					<p class="child">This is paragraph7</p>
+					<p class="child">This is paragraph8</p>
+				</div
+				<div class="p3">
+					<p class="child">This is paragraph9</p>
+					<p class="child">This is paragraph10</p>
+					<p class="child">This is paragraph11</p>
+					<p class="child">This is paragraph12</p>
+		      		<p class="child">This is paragraph13</p>
+				</div>
+		</div>
     </body>
 </html>
