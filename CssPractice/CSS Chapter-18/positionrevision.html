@@ -3,37 +3,49 @@
 	<head>
 		<title>css position revision</title>
 		<style>
+			body{
+				overflow:auto;
+				background-color: aqua;
+				border:solid 5px black;
+				width:100%;
+			}
 			.box{
 				border:solid 2px black;
 				padding:10px;
 				margin:10px;
 				height:100px;
 				width:100px;
+				background-color:yellow;
 			}
 			.box1{
 				position:static;
-				top:10px;
+				top:10px;/* this top left right bottom values not applis */
 				left:20px;
 			}
 			.box2{
 				position:relative;
-				top:15px;
-				left:20px;
+				top:40px;
+				left:140px;
 			}
 			.box3{
 				position:absolute;
-				top:50px;
-				left:50px;
+				top:120px;
+				left:500px;
 			}
 			.box4{
 				position:fixed;
-				top:0;
+				left:300px;
+				top:420px;
+				background-color:red;
+				color:black;
 			}
 			.box5{
 				position:sticky;
 				top:0;
+				left:0;
 				background-color:green;
-				padding:10px;
+				padding:15px;
+				
 			}
 			.box6{
 				position:static;/* default position with out mentioning also it will apply */
@@ -41,11 +53,15 @@
 		</style>
 	</head>
 	<body>
-		<div class="box box1">box1</div>
-		<div class="box box2">box2</div>
-		<div class="box box3">box3</div>
-		<div class="box box4">box4</div>
-		<div class="box box5">box5</div>
+		<div class="box box1">box1 not moves</div>
+		<div class="box box2">box2 moves and original space reserved</div>
+		<div class="box box3">box3 original space not reserved and occupy by necxt element </div>
+		<div class="box box4">box4 ex:youtube fixed </div>
+		<div class="box box5">box5 ex:table headers sticky</div>
+		<div class="box">box7</div>
+		<div class="box">box8</div>
+		<div class="box">box9</div>
+		<div class="box">box10</div>
 		<div class="box box6">box6</div>
 	</body>
 </html>
